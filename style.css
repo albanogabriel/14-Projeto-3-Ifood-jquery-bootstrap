@@ -1,0 +1,113 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+h1.navbar-brand{
+    color: rgb(227,41,41);
+    cursor: pointer;
+}
+
+h1.navbar-brand:hover{
+    color: rgb(227,41,41);
+}
+
+.navbar{
+    background-color: rgb(255, 255, 255);
+}
+
+.nav.nav-underline .nav-link{
+    color: rgb(227,41,41);
+}
+
+/* .nav.nav-underline .nav-link.active{
+    color: rgb(196, 38, 38);
+} */
+
+.nav.nav-underline .nav-link.active:hover{
+    color: rgb(227,41,41);
+}
+
+.nav-item a{
+    color: rgb(227,41,41);
+}
+
+.nav-item a:hover{
+    color: rgb(227,41,41);
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+.navbar-toggler:hover{
+    border: none;
+}
+
+#ifood-logo{
+    width: 80px;
+}
+
+
+#about-restaurant,
+#menu,
+#address{
+    background-color: rgb(251, 246, 239);
+}
+
+.section-title{
+    font-weight: 300;
+}
+
+.p-grey{
+    color: rgb(73, 73, 73);
+    font-size: 14px;
+}
+
+.text-colored{
+    color: white
+}
+
+.color-red{
+    color: rgb(227,41,41);
+}
+
+.color-black{
+    color: rgb(41, 41, 41);
+}
+
+.background-colored{
+    background-color: rgb(227,41,41);
+}
+
+#menu .nav-pills .nav-link{
+    margin-bottom: 10px;
+    color: rgb(227,41,41);
+}
+
+
+#menu .nav-pills .nav-link.active,
+#fale-conosco button{
+    background-color: rgb(227,41,41);
+    color: white;
+    padding: 8px 16px;
+}
+
+#menu .nav-pills .nav-link.active:hover,
+#fale-conosco button:hover{
+    background-color: rgb(190, 35, 35)
+}
+
+.social-links{
+    list-style: none;
+    display: flex;
+}
+
+@media (max-width: 767px){
+    .carousel-item img{
+        height: 170px;
+    }
+}

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <!-- Poppins Google Fonts <link> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--============= HEADER ============-->
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <a href="#" class="navbar-brand m-0"><img src="Assets/ifood-43.png" id="ifood-logo" alt="ifood-logo"></a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-nav">
+                <ul class="nav nav-underline d-block d-md-flex">
+                    <li class="nav-item">
+                        <a href="#about-restaurant" class="nav-link">
+                            <i class="bi bi-house-heart me-1"></i>
+                            Restaurantes
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#events" class="nav-link">
+                            <i class="bi bi-calendar-event me-1"></i>
+                            Eventos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#menu" class="nav-link">
+                            <i class="bi bi-card-text me-1"></i>
+                            Cardápio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-chat-left-dots me-1"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>   
+        </div>
+    </header>
+
+    <!--============= CAROUSEL ============-->
+    <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="./Assets/Slider 1.jpg" alt="Mc2">
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="./Assets/Slider 2.jpg" alt="Mc1">
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+            </div>
+        </div>
+    </div>
+
+    <!--============= SECTIONS ============-->
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <!--============= SECTION 1 - Restaurantes ============-->
+        <section id="about-restaurant">
+            <div class="pt-5">
+                <div class="container">
+                    <h1 class="pb-5">Restaurant</h1>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="./Assets/mcdonalds-mais-bonito-do-mundo.jpg" class="d-block w-100 rounded" alt="most-beautiful-mcdonalds">
+                        </div>
+                        <div class="col-md-7 mt-3 pb-5 mt-md-0">
+                            <h2>McDonald's Imperial</h2>
+                            <h8>PORTO, PORTUGAL</h8>
+                            <p class="p-grey pt-4">
+                                O McDonalds Imperial tem sido frequentemente nomeado como a loja McDonald’s mais bonita do mundo. A loja foi inaugurada em 1995, ocupando o espaço renovado que antes era ocupado pelo Café Imperial, um famoso café que servia café às pessoas da cidade desde a década de 1930. O espaço manteve muitas das suas principais características arquitetónicas do inquilino anterior, incluindo uma icónica águia gigante de bronze que o vai receber na entrada. O interior da loja está repleto de belos vitrais e lustres de cristal, e você pode se deliciar com doces, incluindo as deliciosas tortas de ovos portuguesas.
+                            </p>
+                            <!-- <ul>
+                                <li>item 1</li>
+                                <li>item 2</li>
+                                <li>item 3</li>
+                            </ul>            -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--============= SECTION 2 - Eventos ============-->
+        <section id="events" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row mt-4">
+                    <h2 class="section-title text-center pb-5">Para todas as ocasiões</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="./Assets/Festa-Infantil-Drive-Thru-McDonalds_Divulgação-4.jpeg" class="d-block w-100 rounded pb-3" alt="">
+                        <h4 class="section-title">Aniversários</h4>
+                        <p class="p-grey">Descrição, de aniverário fornecimento de alimentos e bla bla bla</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./Assets/Festa-Infantil-Drive-Thru-McDonalds_Divulgação-4.jpeg" class="d-block w-100 rounded pb-3" alt="">
+                        <h4 class="section-title">Confraternizações</h4>
+                        <p class="p-grey">Descrição, de aniverário fornecimento de alimentos e bla bla bla</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./Assets/Festa-Infantil-Drive-Thru-McDonalds_Divulgação-4.jpeg" class="d-block w-100 rounded pb-3" alt="">
+                        <h4 class="section-title">Aniversários</h4>
+                        <p class="p-grey">Descrição, de aniverário fornecimento de alimentos e bla bla bla</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--============= SECTION 3 - Cardápio ============-->
+        <section class="pt-5 pb-5" id="menu">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">Nosso Cardápio</h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-cardapio">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#nossosprodutos" class="text-start nav-link active">Nossos produtos</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#lancamentos" class="text-start nav-link">Lançamentos</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#sobremesas" class="text-start nav-link">Sobremesas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#mcoferta" class="text-start nav-link">McOferta</button>
+                        </nav> 
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="nossosprodutos">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Assets/Big Mac.jpg" alt="">
+                                        <h5 class="fw-bold mt-2">Big Mac</h5>
+                                        <p class="mt-2">Dois hambúrgueres (100% carne bovina), alface americana, queijo sabor cheddar, molho especial, cebola, picles e pão com gergelim </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Assets/Quarteirão com queijo.jpg" alt="">
+                                        <h5 class="fw-bold mt-2">Quarteirão com Queijo</h5>
+                                        <p class="mt-3"> Um hambúrguer (100% carne bovina), queijo sabor cheddar, picles, cebola, ketchup, mostarda e pão com gergelim. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Assets/Hamburger.jpg" alt="">
+                                        <h5 class="fw-bold mt-2">Hamburger</h5>
+                                        <p class="mt-3"> Um Hamburguer (100% carne bovina), cebola, picles, ketchup, mostarda e pão sem gergelim. </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Assets/frita.jpg" alt="">
+                                        <h5 class="fw-bold mt-2">McFritas Pequena</h5>
+                                        <p class="mt-2">A batata frita mais famosa do mundo. Deliciosas batatas selecionadas, fritas, crocantes por fora, macias por dentro, douradas, irresistíveis, saborosas, famosas, e todos os outros adjetivos positivos que você quiser dar. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Assets/Nuggets4und.png" alt="">
+                                        <h5 class="fw-bold mt-2">Chicken McNuggets 4 unidades</h5>
+                                        <p class="mt-3"> 4 Chicken McNuggets saborosos e crocantes de peito de frango. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Assets/Hamburger.jpg" alt="">
+                                        <h5 class="fw-bold mt-2">Hamburger</h5>
+                                        <p class="mt-3"> Um Hamburguer (100% carne bovina), cebola, picles, ketchup, mostarda e pão sem gergelim. </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="lancamentos">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Assets/bigtasty.jpg" alt="">
+                                        <h5 class="fw-bold mt-2">Big Tasty Bacon Barbecue</h5>
+                                        <p class="mt-2">Um hambúrguer (100% carne bovina), queijo sabor emental, molho barbecue (molho não emulsionado sabor barbecue), fatias de bacon, tomate, alface americana, cebola crispy, molho tasty (molho emulsionado sabor carne grelhada) e pão com gergelim. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Assets/flurry.jpg" alt="">
+                                        <h5 class="fw-bold mt-2">McFlurry M&Ms Caramelo</h5>
+                                        <p class="mt-3"> Composto por bebida láctea sabor baunilha, cobertura de caramelo e M&M´s ® chocolate ao leite. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="tab-pane" id="sobremesas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Assets/mista.jpg" alt="">
+                                        <h5 class="fw-bold mt-2">Casquinha Mista</h5>
+                                        <p class="mt-2">A sobremesa que o Brasil todo adora. Uma casquinha supercrocante, com bebida láctea mista (sabor baunilha e chocolate) que vai bem a qualquer hora. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Assets/flurry.jpg" alt="">
+                                        <h5 class="fw-bold mt-2">McFlurry M&Ms Caramelo</h5>
+                                        <p class="mt-3"> Composto por bebida láctea sabor baunilha, cobertura de caramelo e M&M´s ® chocolate ao leite. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Assets/sundae.jpg" alt="">
+                                        <h5 class="fw-bold mt-2">Sundae Chocolate</h5>
+                                        <p class="mt-3"> A medida certa entre cobertura sabor chocolate e bebida láctea sabor baunilha que pode fazer você viver uma experiência explosiva, além de amendoins crocantes. Desfrute dessa combinação perfeita! </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Assets/sundae-morango.jpg" alt="">
+                                        <h5 class="fw-bold mt-2">Top Sundae Morango</h5>
+                                        <p class="mt-3">Sobremesa com Bebida láctea sabor baunilha e uma supercamada de cobertura de morango e ainda por cima com farofa de paçoca. O canudo completa a tentação. </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="mcoferta">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Assets/mista.jpg" alt="">
+                                        <h5 class="fw-bold mt-2">Casquinha Mista</h5>
+                                        <p class="mt-2">A sobremesa que o Brasil todo adora. Uma casquinha supercrocante, com bebida láctea mista (sabor baunilha e chocolate) que vai bem a qualquer hora. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Assets/flurry.jpg" alt="">
+                                        <h5 class="fw-bold mt-2">McFlurry M&Ms Caramelo</h5>
+                                        <p class="mt-3"> Composto por bebida láctea sabor baunilha, cobertura de caramelo e M&M´s ® chocolate ao leite. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Assets/Big Mac.jpg" alt="">
+                                        <h5 class="fw-bold mt-2">Big Mac</h5>
+                                        <p class="mt-2">Dois hambúrgueres (100% carne bovina), alface americana, queijo sabor cheddar, molho especial, cebola, picles e pão com gergelim </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Assets/Nuggets4und.png" alt="">
+                                        <h5 class="fw-bold mt-2">Chicken 10 unidades</h5>
+                                        <p class="mt-2">Chicken Mc Nuggets crocantes, 10 unidades para você se deliciar </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Assets/sundae.jpg" alt="">
+                                        <h5 class="fw-bold mt-2">Sundae Chocolate</h5>
+                                        <p class="mt-3"> A medida certa entre cobertura sabor chocolate e bebida láctea sabor baunilha que pode fazer você viver uma experiência explosiva, além de amendoins crocantes. Desfrute dessa combinação perfeita! </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Assets/sundae-morango.jpg" alt="">
+                                        <h5 class="fw-bold mt-2">Top Sundae Morango</h5>
+                                        <p class="mt-3">Sobremesa com Bebida láctea sabor baunilha e uma supercamada de cobertura de morango e ainda por cima com farofa de paçoca. O canudo completa a tentação. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./Assets/frita.jpg" alt="">
+                                        <h5 class="fw-bold mt-2">McFritas Pequena</h5>
+                                        <p class="mt-2">A batata frita mais famosa do mundo. Deliciosas batatas selecionadas, fritas, crocantes por fora, macias por dentro, douradas, irresistíveis, saborosas, famosas, e todos os outros adjetivos positivos que você quiser dar. </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--============= SECTION 4 - Form ============-->
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title mb-5"> Fale Conosco</h2>
+                    <div class="row">
+                        <div class="col-md-7">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="nome" class="form-label">Seu Nome</label>
+                                    <input type="text" id="nome" class="form-control" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Seu e-mail</label>
+                                    <input type="email" id="email" class="form-control" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="telefone" class="form-label">Seu telefone(opcional)</label>
+                                    <input type="tel" id="telefone" class="form-control">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="mensagem" class="form-label">Sua mensagem</label>
+                                    <textarea class="form-control" id="mensagem" required></textarea>
+                                </div>
+
+                                <button type="submit" class="btn"> Enviar</button>
+
+                            </form>
+                        </div>
+
+                        <div class="col-md-5">
+                           
+                        </div>
+
+                    </div>               
+                </div>
+            </div>
+        </section>
+
+        <!--============= SECTION 5 - Form ============-->
+        <section id="address">   
+            <div class="container pt-5 pb-5">
+                <div id="adress" class="row mt-5">
+                    <div class="col-md-5 ">   
+                        <div class="row">
+                            <h3 class="fs-4">
+                                Redes-Sociais</h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook color-black"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-3 me-3">
+                                    <a href="#">
+                                        <i class="bi bi-instagram color-black"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp color-black"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                                             
+                    </div>
+
+                    <div class="col-md-7">
+                        <div class="row">
+                            <h3 class="fs-4">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço</h3>
+                            <p>Rua teste exemplo nº 145, Bairro Bootstrap - Florianópolis, SC</p>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+    </div>
+
+
+    
+
+    
+
+    
+    
+    <!-- JQUERY MASK PLUGIN JS -->
+    <script src="./lib/jquery-3.6.4.min.js"></script>
+    <script src="./lib/jquery.mask.min.js"></script>
+    <!-- BOOTSTRAP JS -->
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+    <!-- MAIN JS -->
+    <script src="main.js"></script>
+
+
+</body>
+</html>
